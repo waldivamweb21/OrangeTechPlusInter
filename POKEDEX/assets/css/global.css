@@ -11,7 +11,7 @@ body {
 da viewport (tamanho do nosso dispositivo), ou seja,
  uma altura de 100vh corresponde a 100%  */
 .content {
-    width: 100vh;
+    width: 100vw;
     height: 100vh;
     padding: 1rem;
     background-color: #fff;
@@ -23,16 +23,7 @@ da viewport (tamanho do nosso dispositivo), ou seja,
         max-width: 992px;
         height: auto;
         margin: 1rem auto;
-        border-radius: 1rem;
-        
+        border-radius: 1rem;       
     }
 }
 
-/* colunas um ao lado da outra 50% e 50% */  
-.pokemons {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}

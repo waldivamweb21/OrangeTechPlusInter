@@ -1,0 +1,58 @@
+Dominando o Protocolo HTTP e Intregando com a PokeAPI.
+
+Requisiçoes HTTP
+
+			Path		Querystrings
+URL: https://pokeapi.co/api/v2/${id}
+     ${Endereço}/${path = caminho de identificação do recurso}
+
+Request Method: GET | POST | PUT | DELETE 
+
+URL: https://pokeapi.co/api/v2/pokemon?type=grass&name=1
+     
+Paginação
+URL: https://pokeapi.co/api/v2/pokemon?offset=20&limit=20
+
+offset=0    | Desloca 0 ~> Pagina vazia. 
+limit=2     | Mostra os dois primeiros pokemons.
+
+offset=2    | Desloca de 2 em 2 
+limit=2     | Mostra os dois pokemons das paginas 3 e 4.
+
+Request Headers: Recebe do Servidor
+	configuração da API.
+
+text/html
+application/xhtml+kml
+application/xml;q=0.9
+image/avif
+image/webp
+image/apng
+*/+:q=0.8	~> Aceita devolver tudo.
+application/signed-exchange:v=b3;q=0.9
+
+Devolvendo o Servidor.
+content-type:application/json: charset-utf8
+
+Request Headers          
+				
+	accept-language: 
+pt-BR;Q=1     ~>100% da linguagem pt-BR.  "Caso não tenha languagem na pagina"
+pt:q=0.9      ~> 2ª Linguagem
+en-US:q=0.8
+en:q=0.7
+gl:q=0.6
+
+Authorizantion: Basic...  ~> Mais avançado Sobre APIs.
+
+Response Headers
+	Configuração
+
+ 
+
+
+
+
+
+
+

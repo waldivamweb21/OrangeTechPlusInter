@@ -1,3 +1,13 @@
+
+/* colunas um ao lado da outra 50% e 50% */  
+.pokemons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
 /* Parte interna e Externa da lista*/  
 .pokemon {
     display: flex;
@@ -12,9 +22,11 @@
     color: #000;
     opacity: .3;
     text-align: right;
+    font-size: .625rem;
 }
 
 .pokemon .name{
+    text-transform: capitalize;
     color: #fff;
     font-size: 50px;
     margin-bottom: .25rem;
@@ -39,8 +51,10 @@
     color: #fff;
     padding: .25rem .5rem;
     margin: .25rem 0;
-    font-size:.625 ;
+    font-size:.625rem ;
     border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: center;
 
 }
 
